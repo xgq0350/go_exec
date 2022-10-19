@@ -17,7 +17,8 @@ func hasAlternatingBits(n int) bool {
 	return true
 }
 
-/**
+/*
+*
 时间复杂度：O(1)
 空间复杂度：O(1)
 */
