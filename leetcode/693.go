@@ -23,6 +23,6 @@ func hasAlternatingBits(n int) bool {
 空间复杂度：O(1)
 */
 func hasAlternatingBits2(n int) bool {
-	a := n ^ (n - 1)
+	a := n ^ (n >> 1)
 	return a&(a+1) == 0
 }
