@@ -2,8 +2,8 @@ package main
 
 import "sort"
 
-//根据二进制下1的数目排序
-//时间复杂度：O(nlogn)，空间复杂度：O(n)
+// 根据二进制下1的数目排序
+// 时间复杂度：O(nlogn)，空间复杂度：O(n)
 func onesCount(x int) (c int) {
 	for ; x > 0; x >>= 1 {
 		c += x % 2
@@ -21,7 +21,7 @@ func sortByBits(a []int) []int {
 }
 
 // 递推预处理
-//时间复杂度：O(nlogn)，空间复杂度：O(n)
+// 时间复杂度：O(nlogn)，空间复杂度：O(n)
 var bit = [1e4 + 1]int{}
 
 func init() {
